@@ -15,3 +15,17 @@ $(document).ready(function () {
       $('.amenities h4').text(a_list);
     });
   });
+
+
+const url = 'http://0.0.0.0:5001/api/v1/status/2';
+
+
+$.get(url, function (body) {
+        console.log(body.status);
+        if (body.status === 'OK'){
+            $('DIV.api_status').addClass('available');
+        } else {
+            $('DIV.api_status').removeClass('available');
+        }
+    }
+);
