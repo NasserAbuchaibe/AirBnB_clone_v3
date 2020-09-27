@@ -64,6 +64,13 @@ button:hover {
     max-height: 300px;
 }
 
+.amenities h4, .locations h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 16px;
+    width: 210px;
+}
 .popover::-webkit-scrollbar{
     width: 0px;
 }
@@ -76,6 +83,11 @@ button:hover {
 
 .amenities .popover ul{
     margin: 0px;
+}
+
+.amenities .popover .amenities-list{
+    margin-right: 10px;
+    margin-left: auto;
 }
 
 .locations .popover {
